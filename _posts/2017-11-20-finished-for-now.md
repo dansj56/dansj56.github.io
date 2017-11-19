@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OG and comments"
+title:  "Finished for now"
 date:   2017-11-19 23:31:00 +0100
 categories: jekyll update
 ---
@@ -15,5 +15,6 @@ I tested OG with Facebook and it works. The Facebook Debugger though complains a
 I don't have time right now to fix the fb-one, I don't understand that one.
 It also would like me to specify the dimension of every image linked as an og:image. But that seems way out of scope of Jekyll and a small static site. I guess I could decide on a static image size to use everywhere but that surely defeats the purpose of flexibility and quick updates.
 
+## Jekyll and Sass
 I'd say, given what I've done so far that Jekyll works fine far small static stuff but it quickly gets cumbersome the more social features one would like. 
 I really like the Sass though, it does save a lot of time once you get to know it. The nesting and variables are extremely practical. But on the other hand I would probably just choose a ready made theme the next time....
