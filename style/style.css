@@ -1,0 +1,96 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #000;
+  background: -webkit-linear-gradient(-90deg, #0b360b, #000, #0b360b);
+  background: -o-linear-gradient(-90deg, #0b360b, #000, #0b360b);
+  background: -moz-linear-gradient(-90deg, #0b360b, #000, #0b360b);
+  background: linear-gradient(-90deg, #0b360b, #000, #0b360b);
+  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; }
+
+body {
+  font: 100% "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+  color: #96fa7d;
+  padding: 5%;
+  max-width: 1000px; }
+  body a {
+    color: #a9c700; }
+
+nav ul, .back ul {
+  list-style-type: none;
+  width: 80%; }
+nav li, .back li {
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  border: 2px dashed #a9c700;
+  background: #0b360b;
+  background: -webkit-linear-gradient(180deg, #000, #0b360b, #000);
+  background: -o-linear-gradient(180deg, #000, #0b360b, #000);
+  background: -moz-linear-gradient(180deg, #000, #0b360b, #000);
+  background: linear-gradient(180deg, #000, #0b360b, #000); }
+nav a, .back a {
+  color: #a9c700;
+  font-size: 150%;
+  display: block;
+  text-decoration: none; }
+
+h1 {
+  color: #00b109;
+  padding: 20px;
+  margin-left: 1%;
+  width: 80%; }
+
+h2, h3 {
+  color: #a9c700;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  border: 2px dashed #00b109;
+  text-align: center;
+  clear: both; }
+
+.post-list li {
+  list-style-type: none;
+  margin-bottom: 3%; }
+  .post-list li span {
+    border: 2px dashed #00b109;
+    border-bottom: none;
+    float: left; }
+
+.post-meta {
+  font-size: 70%;
+  color: #00b109; }
+
+.footer {
+  margin-top: 4em;
+  border-top: 4px dashed #a9c700;
+  border-bottom: 4px dashed #a9c700;
+  width: 100%; }
+
+img {
+  display: block;
+  margin: auto;
+  padding: 1%;
+  width: 20%;
+  border: 2px dashed #00b109; }
+
+.inline {
+  float: left;
+  margin: 0 10px 20px 0; }
+
+a:visited {
+  color: #18ff24; }
+
+a:hover {
+  color: #b1ffb5; }
+
+#thisPage {
+  color: white;
+  font-style: oblique; }
+
+/*# sourceMappingURL=style.css.map */

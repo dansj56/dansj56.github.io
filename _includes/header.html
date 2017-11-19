@@ -1,9 +1,9 @@
 <header>
         <nav>
             <ul>
-                <li><a href="{{site.baseurl}}/index.html">  My (learning) blog</a></li>
-                <li><a href="{{site.baseurl}}/about.html"> About me</a></li>
-                <li><a href="{{site.baseurl}}/bookmarks.html"> My Bookmarks</a></li>
+                <li><a href="{{site.baseurl}}/index.html" id="{% if page.url == '/' %}thisPage{% endif %}">  My (learning) blog</a></li>
+                <li><a href="{{site.baseurl}}/about.html" id="{% if page.url == '/about.html' %}thisPage{% endif %}"> About me</a></li>
+                <li><a href="{{site.baseurl}}/bookmarks.html" id="{% if page.url == '/bookmarks.html' %}thisPage{% endif %}"> My Bookmarks</a></li>
             </ul>
         </nav>
 </header>

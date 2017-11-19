@@ -1,0 +1,126 @@
+//Imports
+@import 'reset';
+
+//Mixins
+@mixin background-gradient($direction, $first-color, $second-color, $third-color) {
+    background: -webkit-linear-gradient($direction, $first-color, $second-color, $third-color);
+    background: -o-linear-gradient($direction, $first-color, $second-color, $third-color);
+    background: -moz-linear-gradient($direction, $first-color, $second-color, $third-color);
+    background: linear-gradient($direction, $first-color, $second-color, $third-color);
+}
+
+//Variables
+$font-stack:    
+'Lucida Sans Typewriter', 'Lucida Console', monaco,
+'Bitstream Vera Sans Mono', monospace;
+$primary-color: rgb(0, 177, 9);
+$secondary-color: rgb(169, 199, 0);
+$background-color-1: #000;
+$background-color-2: rgb(11, 54, 11);
+$text-color: rgb(150, 250, 125);
+$line-type: dashed;
+
+//Style
+html {
+background: $background-color-1; 
+@include background-gradient(-90deg, $background-color-2, $background-color-1, $background-color-2);
+font-family: $font-stack;
+}
+
+
+body {
+    font: 100% $font-stack;
+    color: $text-color;
+    padding: 5%;
+    max-width: 1000px;
+
+    a {
+        color: $secondary-color;
+    }
+}
+
+nav, .back {
+    ul {
+        list-style-type: none;
+        width: 80%;
+    }
+    li {
+        display: inline-block;
+        margin: auto;
+        padding: 5px;
+        border: 2px $line-type $secondary-color;
+        background: $background-color-2; 
+        @include background-gradient(180deg, $background-color-1, $background-color-2, $background-color-1); 
+    }
+    a {
+        color: $secondary-color;
+        font-size: 150%;
+        display: block;
+        text-decoration: none;
+    }
+}
+
+
+
+h1 {
+    color: $primary-color;
+    padding: 20px;
+    margin-left: 1%;
+    width: 80%;
+    
+}
+h2, h3 {
+    color: $secondary-color;
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    border: 2px $line-type $primary-color;
+    text-align: center;
+    clear: both;
+}
+
+.post-list li {
+    list-style-type: none;
+    margin-bottom: 3%;
+
+    span {
+        border: 2px $line-type $primary-color;
+        border-bottom: none;
+        float: left;
+    }
+}
+.post-meta {
+    font-size: 70%;
+    color: $primary-color;
+}
+.footer {
+    margin-top: 4em;
+    border-top: 4px $line-type $secondary-color;
+    border-bottom: 4px $line-type $secondary-color;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 1%;
+    width: 20%;
+    border: 2px $line-type $primary-color;
+}
+
+.inline {
+    float: left;
+    margin: 0 10px 20px 0; 
+}
+
+
+
+a:visited {
+    color: lighten($primary-color, 20%);
+}
+a:hover {
+    color: lighten($primary-color, 50%);
+}
+#thisPage {
+    color: white;
+    font-style: oblique;
+}

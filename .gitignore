@@ -1,7 +1,11 @@
 README.md
-_site
 
-# Created by https://www.gitignore.io/api/node,visualstudiecode,macos
+# Created by https://www.gitignore.io/api/node,visualstudiocode,macos,jekyll,sass
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
 
 ### macOS ###
 *.DS_Store
@@ -91,6 +95,15 @@ typings/
 .env
 
 
-#!! ERROR: visualstudiecode is undefined. Use list command to see defined gitignore types !!#
+### Sass ###
+*.css.map
 
-# End of https://www.gitignore.io/api/node,visualstudiecode,macos
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# End of https://www.gitignore.io/api/node,visualstudiocode,macos,jekyll,sass
