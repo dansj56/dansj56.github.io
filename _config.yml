@@ -3,7 +3,7 @@ email: ds222rn@student.lnu.se
 description: >- # this means to ignore newlines until "baseurl:"
   This is my site for blogging about and showcasing projects as a
   part of the course 1DV022. 
-baseurl: "ds-blog-2"
+baseurl: 
 exclude: ['README.md']
 disqus:
   shortname: daniels-blog-2
